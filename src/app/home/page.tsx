@@ -6,24 +6,24 @@ import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import { getQueryClient } from "@/trpc/server";
 import { getSession } from "@/lib/auth";
 
-import { LandingPageContents } from "./_ui/landing-page-contents";
+import { HomePageContents } from "./_ui/home-page-contents";
 
-const LandingPage = async () => {
+const HomePage = async () => {
   const session = await getSession();
 
-  if(session) redirect("/home");
-
+  if(!session) redirect("/login");
+  
   const queryClient = getQueryClient();
 
   return (
     <HydrationBoundary state={dehydrate(queryClient)}>
       <ErrorBoundary fallback={<div>There was an error</div>}>
         <Suspense fallback={<div>Loading...</div>}>
-          <LandingPageContents/>
+          <HomePageContents/>
         </Suspense>
       </ErrorBoundary>
     </HydrationBoundary>
   );
 };
 
-export default LandingPage;
+export default HomePage;
