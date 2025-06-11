@@ -1,6 +1,6 @@
-# G Can Build - Tutorial Starter Template
+# G Can Build - Walkthrough Starter Template
 
-Welcome to the G Can Build tutorial starter template! This repository serves as the foundation for the YouTube tutorial series where we explore building and deploying modern web applications. Link to the YT Channel: https://www.youtube.com/@GeorgeLe
+Welcome to the G Can Build Walkthrough starter template! This repository serves as the foundation for the YouTube walkthrough series where we explore building and deploying modern web applications. Link to the YT Channel: https://www.youtube.com/@GeorgeLe
 
 ## 🚀 Tech Stack
 
@@ -58,11 +58,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `/src/app` - Next.js app router pages and layouts
 - `/src/lib` - Utility functions and shared logic
 
-## 🎥 YouTube Tutorials
+## 🎥 YouTube Walkthroughs
 
-This template is used in the G Can Build YouTube channel tutorials. Each tutorial builds upon this foundation to create various web applications while teaching modern web development concepts.
+This template is used in the G Can Build YouTube channel walkthroughs. Each walkthrough builds upon this foundation to create various web applications while teaching modern web development concepts.
 
-Follow along with our tutorials to learn:
+Follow along with our walkthroughs to learn:
 - Full-stack web development
 - Modern React patterns and best practices
 - Database design and management
